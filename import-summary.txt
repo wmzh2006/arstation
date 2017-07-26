@@ -1,0 +1,123 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* doc/
+* doc/DBCacheServer.vsd
+* doc/《凤智大话骰》后台架构文档.docx
+* doc/凤智大话骰-数据库-概要设计说明书.doc
+* doc/协议.txt
+* doc/声音引擎.vsd
+* doc/游戏引擎.vsd
+* doc/网络引擎.vsd
+* key/
+* key/lyingdice.keystore
+* key/lyingdice签名说明.txt
+* key/myarstation.keystore
+* key/myarstation签名说明.txt
+* proguard/
+* proguard/dump.txt
+* proguard/mapping.txt
+* proguard/seeds.txt
+* proguard/usage.txt
+* release/
+* release/MyArStation.apk
+* tools/
+* tools/pak/
+* tools/pak/face.prj
+* tools/pak/face_map.pak
+* tools/pak/login_map.pak
+* tools/pak/login_nearme2.prj
+* tools/pak/login_new18.prj
+* tools/pak/login_new20.prj
+* tools/pak/mapEditor2_8_1.jar
+* tools/pak/tutorials_2.prj
+* tools/pak/v32/
+* tools/pak/v32/face.prj
+* tools/pak/v32/item0.prj
+* tools/pak/v32/item1.prj
+* tools/pak/v32/login_new21.prj
+* tools/pak/v33/
+* tools/pak/v33/anim01.prj
+* tools/pak/v33/anim02.prj
+* tools/pak/v33/anim03.prj
+* tools/pak/v33/anim04.prj
+* tools/pak/v33/login_new22.prj
+* tools/pak/v34/
+* tools/pak/v34/anim06.prj
+* tools/pak/v34/car.prj
+* tools/pak/v34/desk.prj
+* tools/pak/v34/login_new23.prj
+* tools/pak/v34/login_new24.prj
+* tools/pak/v34/login_new26.prj
+* tools/pak/v34/login_new27.prj
+* tools/pak/v34/tutorials_3.prj
+* tools/pak/v34/光效.prj
+* tools/pak/v34/光效2.prj
+* tools/pak/v35/
+* tools/pak/v35/desk.prj
+* tools/pak/v35/login_new30.prj
+* tools/pak/v36/
+* tools/pak/v36/desk.prj
+* tools/pak/v36/login_new30.prj
+* tools/pak/yanhua.prj
+* tools/pak/yanhua_map.pak
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => ArStation/src/main/AndroidManifest.xml
+* assets/ => ArStation/src/main/assets/
+* libs/YeepayPlugin_2.0.0.jar => ArStation/libs/YeepayPlugin_2.0.0.jar
+* lint.xml => ArStation/lint.xml
+* proguard.cfg => ArStation/proguard.cfg
+* res/ => ArStation/src/main/res/
+* src/ => ArStation/src/main/java/
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
