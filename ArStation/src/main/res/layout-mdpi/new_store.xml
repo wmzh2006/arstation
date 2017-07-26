@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainrlStore"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dp"
+    android:visibility="gone" >
+
+    <!-- 商店 -->
+
+    <RelativeLayout
+        android:id="@+id/rlStore"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible" >
+
+        <!-- title -->
+
+        <LinearLayout
+            android:id="@+id/lltab"
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/glass0"
+            android:orientation="horizontal"
+            android:padding="2dp" >
+
+            <Button
+                android:id="@+id/btnTabGoods"
+                style="@style/StyleButtonGeneral"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="@string/Store_Tag_Goods" />
+
+            <Button
+                android:id="@+id/btnVIP"
+                style="@style/StyleButtonGeneral"
+                android:layout_marginLeft="10dip"
+                android:text="@string/Store_Tag_Vip"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnMygoods"
+                style="@style/StyleButtonGeneral"
+                android:layout_marginLeft="10dip"
+                android:text="@string/Store_Tag_MyGoods" />
+
+            <Button
+                android:id="@+id/btnBuyDetail"
+                style="@style/StyleButtonGeneral"
+                android:layout_marginLeft="10dip"
+                android:text="@string/Store_Tag_BuyDetail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRemarks"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/lltab"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/Store_detail_tip"
+                android:textSize="20dip"
+                android:visibility="gone" />
+            <!-- 内容区 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.71"
+                android:background="@drawable/gdbj"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal"
+                android:paddingRight="10dp" >
+
+                <ListView
+                    android:id="@+id/lvGoodslist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@color/trans"
+                    android:divider="@drawable/list_line"
+                    android:dividerHeight="1dp"
+                    android:smoothScrollbar="true"
+                    android:visibility="visible" />
+
+               <!--vip界面  -->
+				<include layout="@layout/new_vip"/>"
+                <ListView
+                    android:id="@+id/lvMyGoodsList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@color/trans"
+                    android:divider="@drawable/list_line"
+                    android:dividerHeight="1dp"
+                    android:smoothScrollbar="true"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/lvGoodsDetailList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@color/trans"
+                    android:divider="@drawable/list_line"
+                    android:dividerHeight="1dp"
+                    android:smoothScrollbar="true"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/titlebar"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_height"
+                android:background="@drawable/glass0"
+                android:padding="4dp" >
+
+                <!-- 总金额 -->
+
+                <TextView
+                    android:id="@+id/tvProperty"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="9dip"
+                    android:background="@drawable/new_text_bg"
+                    android:gravity="center"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/btnChangeto"
+                    style="@style/StyleButtonGeneralSmall"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/btnChange"
+                    android:scaleType="fitCenter"
+                    android:text="@string/Store_Changeto_text" />
+
+                <Button
+                    android:id="@+id/btnChange"
+                    style="@style/StyleButtonGeneralSmall"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:layout_toLeftOf="@+id/btnReturn"
+                    android:scaleType="fitCenter"
+                    android:text="@string/Store_Change_text" />
+
+                <Button
+                    android:id="@+id/btnReturn"
+                    style="@style/StyleButtonReturn"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="24dp"
+                    android:scaleType="fitCenter" />
+
+                <ImageView
+                    android:id="@+id/imYan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignLeft="@+id/tvProperty"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="3dip"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/fbi" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/new_chat_row"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="horizontal"
+    android:padding="9dp" >
+
+    <ImageView
+        android:id="@+id/ibchange_dice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/new_dice0_big1" />
+
+    <ImageView
+        android:id="@+id/ibchange_dice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/new_dice1_big1" />
+
+    <ImageView
+        android:id="@+id/ibchange_dice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/new_dice2_big1" />
+
+    <ImageView
+        android:id="@+id/ibchange_dice4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/new_dice3_big1" />
+
+    <ImageView
+        android:id="@+id/ibchange_dice5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/new_dice4_big1" />
+
+    <ImageView
+        android:id="@+id/ibchange_dice6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:background="@drawable/new_dice0_big6" />
+</LinearLayout>
+
+</RelativeLayout>

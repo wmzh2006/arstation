@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llactivity_page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@+id/titlebar"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:padding="5dp"
+        android:background="@drawable/glass0" >
+		 <Button
+            android:id="@+id/btnactivity_detail_rank"
+            style="@style/StyleButtonGeneral"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dip"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            android:text="读取排行" />
+        <!-- 标题文字 -->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_detail_title"/>
+        
+        
+        <Button
+            android:id="@+id/btnactivity_detail_return"
+            android:background="@drawable/new_btn_return"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:scaleType="fitCenter"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/svdetail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="5dp"
+        android:background="@drawable/gdbj"
+        android:layout_below="@+id/titlebar" >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            >
+            <TextView
+                style="@style/StyleActivity"
+                android:id="@+id/tvtime"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+            <include
+                android:id="@+id/lodetail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvtime"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="150dp"
+                layout="@layout/new_stock_list" />
+            <TextView
+                style="@style/StyleActivity"
+                android:id="@+id/tvright"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lodetail"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/white"
+                android:text="活动最终解释权归凤智科技所有" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

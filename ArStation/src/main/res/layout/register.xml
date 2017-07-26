@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainregister"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<EditText
+    android:id="@+id/editTextRegisterPSW"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_x="154dp"
+    android:layout_y="151dp"
+    android:background="@null"
+    android:ems="10"
+    android:inputType="textPassword"
+    android:textColor="#ffffff"
+    android:maxLength="30"
+    android:visibility="visible" android:hint="@string/Input_Hint_Password"/>
+
+<EditText
+    android:id="@+id/editTextRegisterPSWConfirm"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_x="154dp"
+    android:layout_y="200dp"
+    android:background="@null"
+    android:ems="10"
+    android:hint="@string/Input_Hint_Password_Confirm"
+    android:inputType="textPassword"
+    android:textColor="#ffffff"
+    android:visibility="visible"/>
+
+<EditText
+    android:id="@+id/editTextRegisterID"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:layout_x="154dp"
+    android:layout_y="102dp"
+    android:background="@null"
+    android:clickable="false"
+    android:ems="10"
+    android:hint="@string/Input_Hint_ID"
+    android:inputType="number"
+    android:isScrollContainer="false"
+    android:textColor="#ffffff"
+    android:visibility="visible" android:maxLength="12">
+
+</EditText>
+
+</AbsoluteLayout>

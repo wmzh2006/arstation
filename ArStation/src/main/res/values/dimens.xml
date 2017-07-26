@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- 标题栏高度中 -->
+	<dimen name="title_height">48dip</dimen>
+	<!-- 标题栏高度大 -->
+	<dimen name="title_height_big">50dip</dimen>
+	<!-- 标题栏排行榜高度 -->
+	<dimen name="rank_title_height">76dip</dimen>
+	<!-- 标题栏logo到左边的margin -->
+	<dimen name="title_left_margin">3dip</dimen>
+	<!-- 标题栏到右边的边距 -->
+	<dimen name="title_right_padding">7dip</dimen>
+	
+	<!-- 主界面到两边的margin -->
+	<dimen name="home_main_margin">6dip</dimen>
+	
+	<dimen name="pager_dot_margin">6dip</dimen>
+	
+	<dimen name="history_item_height">35dip</dimen>
+	
+	<dimen name="search_result_item_height">90dip</dimen>
+	
+	<dimen name="creat_shop_input_distance">3dip</dimen>
+	<dimen name="creat_shop_text_size">12sp</dimen>
+	<dimen name="create_shop_tip_size">10sp</dimen>
+	<dimen name="creat_shop_edittext_height">26dip</dimen>
+	<dimen name="creat_shop_edittext_small_height">23dip</dimen>
+	
+	<!-- 上下文菜单 -->
+	<!-- 上下文菜单项左右margin -->
+	<dimen name="context_menu_margin_h">0dip</dimen>
+	<dimen name="context_menu_margin_v">8dip</dimen>
+	<dimen name="context_menu_height">28dip</dimen>
+	
+	<dimen name="city_item_height">38dip</dimen>
+	
+	<dimen name="foot_item_height">33dip</dimen>
+	
+	
+	<dimen name="map_search_info_widht">255dip</dimen>
+	<dimen name="map_search_info_height">202dip</dimen>
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <com.funoble.myarstation.game.GameCanvas
+            android:id="@+id/viewProgress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/listViewChat"
+        android:layout_width="330dp"
+        android:layout_height="165dp"
+        android:layout_x="75dp"
+        android:layout_y="65dp"
+        android:background="#000000"
+        android:visibility="invisible" >
+    </ListView>
+
+    <EditText
+        android:id="@+id/editTextChat"
+        android:layout_width="275dp"
+        android:layout_height="54dp"
+        android:layout_x="72dp"
+        android:layout_y="20dp"
+        android:ems="10"
+        android:maxLength="34"
+        android:singleLine="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonChatRecord"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_x="237dp"
+        android:layout_y="228dp"
+        android:text="聊天记录"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonChatCommon"
+        android:layout_width="173dp"
+        android:layout_height="wrap_content"
+        android:layout_x="71dp"
+        android:layout_y="228dp"
+        android:text="常用语"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/buttonChatSend"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        android:layout_x="342dp"
+        android:layout_y="22dp"
+        android:text="发送"
+        android:visibility="invisible" />
+
+</AbsoluteLayout>

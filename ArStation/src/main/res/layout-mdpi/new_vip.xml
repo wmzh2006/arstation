@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/svVip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fadingEdge="vertical"
+    android:scrollbars="vertical"
+    android:visibility="gone" >
+
+    <!-- VIP界面 -->
+
+    <LinearLayout
+        android:id="@+id/lvVIPlist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/trans"
+        android:orientation="vertical"
+        android:smoothScrollbar="true" >
+
+        <!-- 购买vip -->
+
+        <RelativeLayout
+            android:id="@+id/rlStoreItem"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/glass0"
+            android:clickable="true"
+            android:paddingBottom="8dip"
+            android:paddingLeft="6dip"
+            android:paddingRight="6dip"
+            android:paddingTop="7dip" >
+
+            <!-- 图片 -->
+
+            <LinearLayout
+                android:id="@+id/llPic"
+                android:layout_width="53dip"
+                android:layout_height="53dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="10dip" >
+
+                <ImageView
+                    android:id="@+id/ivVipPic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+            <!-- 购买 -->
+
+            <Button
+                android:id="@+id/ivVipArrow"
+                style="@style/StyleButtonGeneral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dip"
+                android:text="@string/Store_Btn_Buy"
+                android:textSize="16sp" />
+            <!-- 价格 -->
+
+            <TextView
+                android:id="@+id/tvVipPrice"
+                style="@style/store_middle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ivFbi"
+                android:layout_alignTop="@+id/llPic"
+                android:layout_marginRight="60dp"
+                android:layout_toLeftOf="@+id/ivVipArrow"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15dip" />
+            <!-- 名称 -->
+
+            <TextView
+                android:id="@+id/tvVipName"
+                style="@style/store_middle_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/llPic"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="20dip"
+                android:layout_toLeftOf="@+id/ivFbi"
+                android:layout_toRightOf="@+id/llPic"
+                android:singleLine="true"
+                android:textColor="@color/green"
+                android:textSize="20dip" />
+
+            <ImageView
+                android:id="@+id/ivFbi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/llPic"
+                android:layout_toLeftOf="@+id/tvVipPrice"
+                android:src="@drawable/fbi" />
+            <!-- 描述 -->
+
+            <TextView
+                android:id="@+id/tvVipDes"
+                style="@style/store_middle_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvVipName"
+                android:layout_below="@+id/tvVipName"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="5dip"
+                android:layout_toLeftOf="@id/ivVipArrow"
+                android:singleLine="false"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llVip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/rlDec"
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/glass0"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="5dp"
+                android:visibility="visible" >
+
+                <RelativeLayout
+                    android:id="@+id/rlVip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5dp"
+                    android:background="@null" >
+
+                    <TextView
+                        android:id="@+id/tvMyVIPlevel"
+                        style="@style/store_high_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="center"
+                        android:text="VIP 1"
+                        android:textColor="@color/gray_white_color" />
+
+                    <Button
+                        android:id="@+id/ivMyVIPIcon"
+                        style="@style/StyleButtonGeneralSmall"
+                        android:layout_toRightOf="@+id/tvMyVIPlevel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dip"
+                        android:text="点击加速"
+                        android:textSize="12sp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+                <!-- VIP条 -->
+
+                <com.funoble.myarstation.view.MyProgressBar
+                    android:id="@+id/pbLevel"
+                    android:visibility="visible"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="3dip"
+                    android:layout_toLeftOf="@+id/tvMyRemainTime"
+                    android:layout_toRightOf="@+id/rlVip"
+                    android:progressDrawable="@drawable/color_progressbar4" />
+
+                <TextView
+                    android:id="@+id/tvMyRemainTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignBottom="@+id/rlVip"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/rlVip"
+                    android:layout_marginLeft="5dp"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvMyVipCurr"
+                style="@style/store_middle_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/glass0"
+                android:padding="5dp"
+                android:singleLine="false"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tvMyVipNext"
+                style="@style/store_middle_text"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/glass0"
+                android:padding="5dp"
+                android:singleLine="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/maincreaterole"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <EditText
+        android:id="@+id/editTextCreateRoleName"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:clickable="false"
+        android:hint="@string/Input_Hint_CreateRole_NAME"
+        android:maxLength="6"
+        android:singleLine="true"
+        android:textColor="#ffffff"
+        android:visibility="gone" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/editTextCreateRoleDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:gravity="left"
+        android:scrollbars="none"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+</RelativeLayout>

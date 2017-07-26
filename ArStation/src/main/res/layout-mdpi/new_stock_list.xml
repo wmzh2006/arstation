@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <View style="@style/list_item_seperator_layout" />
+
+    <include layout="@layout/new_stock_list_header" />
+
+    <View style="@style/list_item_seperator_layout" />
+
+    <com.funoble.myarstation.utils.LinearLayoutForListView
+        android:id="@+id/llrankandreward"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:orientation="vertical" >
+        <View 
+            android:id="@+id/listview"
+            style="@style/list_item_seperator_layout" />
+    </com.funoble.myarstation.utils.LinearLayoutForListView>
+
+</LinearLayout>

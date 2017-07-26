@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlStoreItem"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:paddingBottom="8dip"
+    android:paddingLeft="6dip"
+    android:paddingRight="6dip"
+    android:paddingTop="7dip" >
+
+    <!-- 图片 -->
+    <LinearLayout
+        android:id="@+id/llPic"
+        android:layout_width="64dip"
+        android:layout_height="72dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dip">
+
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llTip"
+        android:layout_width="80dip"
+        android:layout_height="66dip"
+        android:layout_alignBottom="@+id/llPic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvContent1"
+            android:layout_width="fill_parent"
+            android:textSize="15dip"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="@string/Store_buyTime"/>
+        <TextView
+            android:id="@+id/tvBuyTime"
+            android:textColor="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dip"/>
+    </LinearLayout>
+
+   <!-- 价格 -->
+    <TextView
+        android:id="@+id/tvPrice"
+        style="@style/store_middle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/llTip"
+        android:layout_toRightOf="@+id/ivFbi"
+        android:layout_below="@+id/tvDes"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dip"
+        android:layout_alignTop="@+id/llPic"
+        android:layout_alignBottom="@+id/ivFbi"
+        android:gravity="center_vertical"
+        android:singleLine="true"/>
+    
+    <!-- 名称 -->
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/store_middle_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/llPic"
+        android:layout_toRightOf="@+id/llPic"
+        android:layout_marginLeft="10dip"
+        android:textColor="@color/green"
+        android:singleLine="true" android:textSize="20dip" />
+    
+    <ImageView android:id="@+id/ivFbi"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@+id/tvName"
+	    android:layout_alignTop="@+id/llPic"
+	    android:src="@drawable/fbi"/>
+    <!-- 描述 -->
+    <TextView
+        android:id="@+id/tvDes"
+        style="@style/store_middle_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvName"
+        android:layout_below="@+id/tvName"
+        android:layout_marginRight="2dip"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dip"
+        android:layout_toLeftOf="@+id/llTip"
+        android:singleLine="false"/>
+
+</RelativeLayout>

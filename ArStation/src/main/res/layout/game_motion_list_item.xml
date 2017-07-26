@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:id="@+id/game_motion_item_table_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="5">
+        <TableRow
+            android:id="@+id/game_motion_row">
+            <View
+                style="@style/list_item_cell_seperator_layout"
+                />
+            <TextView
+                android:id="@+id/game_motion_list_rank"
+                android:layout_width="60dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:padding="2dip" />
+            <View
+                style="@style/list_item_cell_seperator_layout"
+                />
+            <TextView
+                android:id="@+id/game_motion_list_name"
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:padding="2dip" />
+            <View
+                style="@style/list_item_cell_seperator_layout"
+                />
+            <TextView
+                android:id="@+id/game_motion_list_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:padding="2dip" />
+            <View
+                style="@style/list_item_cell_seperator_layout"
+                />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

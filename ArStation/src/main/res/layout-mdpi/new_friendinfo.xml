@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainfriend"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlContent"
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/rlTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/glass0"
+            android:padding="5dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tvfriendlist"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnFriendReturn"
+                style="@style/StyleButtonReturn"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                 />
+            
+            <Button
+                android:id="@+id/btnShake"
+                style="@style/StyleButtonGeneralSmall"
+                android:layout_width="100dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:text="摇一摇" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lvfriend"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/rlTitle"
+            android:layout_margin="5dp"
+            android:background="@drawable/gdbj"
+            android:cacheColorHint="@color/trans"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@drawable/list_line"
+            android:dividerHeight="1dp"
+            android:padding="8dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:smoothScrollbar="true"
+            android:visibility="visible" />
+        
+        <ListView
+            android:id="@+id/lvSearchfriend"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/rlTitle"
+            android:layout_margin="5dp"
+            android:background="@drawable/gdbj"
+            android:cacheColorHint="@color/trans"
+            android:descendantFocusability="blocksDescendants"
+            android:divider="@drawable/list_line"
+            android:dividerHeight="1dp"
+            android:padding="8dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:smoothScrollbar="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

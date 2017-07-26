@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gvFave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:columnWidth="30dp"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:padding="5dp"
+        android:background="@drawable/gdbj"
+        android:numColumns="5" />
+

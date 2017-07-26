@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="usedwords">
+        <item>别想那么久啦！快点吧！</item>
+        <item>有人要倒了...元芳，你怎么看？</item>
+        <item>太好了！这样都能赢！</item>
+        <item>没天理啊，这也太多了吧！</item>
+        <item>不会吧！就那么丁点！</item>
+        <item>喊得太小了，搞大！</item>
+        <item>相信我，我是老实人，不说假话的！</item>
+        <item>我不会瞎喊的，大胆顶起！</item>
+        <item>哎呀，一个都没有，开玩笑的吧！</item>
+        <item>太假了，没有也跟喊！</item>
+        <item>嘿，交个朋友吧！</item>
+    </string-array>
+    <integer-array name="id">
+        <item>-1935625483</item>
+        <item>1006193797</item>
+        <item>-1479552553</item>
+    </integer-array>
+     <string-array name="rolesDesc">
+        <item>语言：普通话  年龄：22 身高：182cm 来自北京，说一口带广东音的普通话。某高官的私生子，在广东出生，初中的时候跟随母亲北上寻父。从此，过上无忧无虑的官二代生活。</item>
+        <item>语言：普通话  年龄：30 身高：162cm 来自深圳，一位高薪时尚白领。由于工作压力巨大，作为女强人的她习惯了每晚来酒吧降压。最终爱上了夜蒲生活，以物色帅哥寻欢为乐。</item>
+        <item>语言：广东话  年龄：23 身高：175cm 来自香港，热爱武术，自称是浩气长存李小龙先生的截拳道传人。为人豪爽，重义气。</item>
+        <item>语言：广东话  年龄：18 身高：160cm 来自广州，新塘高中高二（六）班理科高材生。父亲经营的酒吧，生意日益黯淡。决心在不影响学业的情况下，帮助父亲摆脱困境。</item>
+        <item>语言：潮州话  年龄：20 身高：166cm 来自潮州，热爱游泳。从小就跟着父母走南闯北，非常有经济头脑。目前在一家房地产公司做销售，业绩已过亿。</item>
+    </string-array>
+    <string-array name="rolesname">
+        <item>许创</item>
+        <item>Linda</item>
+        <item>李小蛇</item>
+        <item>肖敏</item>
+        <item>何洁</item>
+    </string-array>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainAlbum"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 相册 -->
+
+    <RelativeLayout
+        android:id="@+id/rlMyPhoto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/rlPhoto"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:padding="8dp"
+            android:visibility="visible" >
+
+            <ImageView
+                android:id="@+id/imPhoto"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llMenu"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/glass0"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="visible" >
+
+            <Button
+                android:id="@+id/btn_return"
+                style="@style/StyleButtonReturn"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_file"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/new_icon_folder_small" />
+
+            <Button
+                android:id="@+id/btn_cameral"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/new_icon_camera_small" />
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- 上传相片 -->
+
+    <include
+        android:id="@+id/rlcropPhoto"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/new_crop_view"
+        android:visibility="gone" />
+
+</RelativeLayout>

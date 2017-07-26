@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_height="fill_parent" >
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/new_girl" />
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:background="@drawable/gdbj" >
+
+        <TextView
+            android:id="@+id/tvContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/rlbar"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" >
+
+            <Button
+                style="@style/StyleButtonGeneralSmall"
+                android:id="@+id/btnbuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="60dp"
+                android:text="关闭" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

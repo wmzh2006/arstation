@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRankItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:paddingBottom="8dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="7dp" >
+
+    <TextView
+        android:id="@+id/tvRankNum"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="100"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <!-- 图片 -->
+
+    <LinearLayout
+        android:id="@+id/llUserPic"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tvRankNum"
+        android:padding="3dp" >
+
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <!-- 名称 -->
+
+    <TextView
+        android:id="@+id/tvRankNick"
+        style="@style/store_middle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/llUserPic"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/llUserPic"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <!-- 描述 -->
+	<ImageButton android:id="@+id/icon"
+	    android:layout_width="14dp"
+	    android:layout_height="14dp"
+	    android:layout_alignLeft="@+id/tvRankNick"
+        android:layout_alignBottom="@+id/tvRankValue"
+	    />
+    <TextView
+        android:id="@+id/tvRankValue"
+        style="@style/store_middle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_below="@+id/tvRankNick"
+        android:layout_marginTop="5dp"
+        android:gravity="top"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnAddFriend"
+        style="@style/StyleButtonRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Friend"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:id="@+id/btntrace"
+        style="@style/StyleButtonRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/llUserPic"
+        android:layout_alignBottom="@+id/llUserPic"
+        android:layout_toRightOf="@+id/tvRankNick"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="0dp"
+        android:text="@string/Trance"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/btnAddFriend"/>
+
+</RelativeLayout>

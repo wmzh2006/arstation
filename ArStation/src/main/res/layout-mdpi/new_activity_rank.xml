@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/glass0"
+    android:layout_height="fill_parent" >
+    <Button android:id="@+id/btn_activity_rank"
+        style="@style/StyleButtonGeneralSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="导出"/>
+    <ListView 
+        android:id="@+id/activity_rank"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@drawable/list_line"
+        android:cacheColorHint="@null"
+        android:focusable="false"
+        android:dividerHeight="1dp"/>
+</LinearLayout>

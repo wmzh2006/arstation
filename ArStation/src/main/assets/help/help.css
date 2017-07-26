@@ -1,0 +1,26 @@
+/* CSS Document */
+*{margin:0; padding:0;}
+body {
+	font-family:Verdana;
+	color:#CDCDB8;
+	line-height:150%;
+	margin:0;
+	padding:4px;
+	background-color:transparent;
+	font-size: 14px;
+	text-shadow: 3px 3px 4px #000
+}
+.box { padding:10px;}
+.blue {
+	font-weight: normal;
+	color: #CDCDB8;
+	text-decoration: none;
+}
+h2{font-size:24px; text-shadow: 3px 3px 4px #000; line-height:30px; color:#CDCDB8; border-bottom:1px solid #c9bc9e; padding-bottom:10px;}
+.tit {color:#CDCDB8; text-shadow: 3px 3px 4px #000; font-size:14px; line-height:30px; padding:10px 0 30px 0;}
+.tit p {padding:5px 0;}
+h3 {font-size:18px; text-shadow: 3px 3px 4px #000; clear:#ffffff; font-weight:bold; line-height:35px; margin:20px 0; background:#transparent; padding-left:5px; border-bottom:1px dashed #c9bc9e;}
+dd {padding:0 25px;}
+.tit span{font-weight:bold;}
+.yellow {color: #ff0000; text-shadow: 3px 3px 4px #000;}
+.tit b{font-weight:bold; font-size:18px;}

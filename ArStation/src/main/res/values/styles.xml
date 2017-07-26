@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="StarbigRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/new_drunk</item>
+    </style>
+
+    <style name="PlayerInfodialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowBackground">@color/transparent</item> <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item> <!-- 模糊 -->
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item> <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item> <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item> <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item> <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item> <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 屏幕背景不变暗 -->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="MainTheme" parent="@android:Theme.Black">
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:colorBackground">@color/black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Base application theme is the default theme. -->
+    <style name="DefaultTheme" parent="android:Theme"></style>
+
+    <style name="Theme.InfoDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ITODialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">false</item>
+        <item name="android:windowFrame">@null</item>
+    </style>
+    
+    <style name="MSGDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">false</item>
+        <item name="android:windowFullscreen">true</item> 
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:windowFrame">@null</item>
+    </style>
+
+    <style name="PushLeftAnim" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@style/PushLeftAnim</item>
+    </style>
+
+    <style name="title_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+
+    <!-- 小字体 -->
+    <style name="title_text_small">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <!-- type1按钮风格 -->
+    <style name="btn_type1">
+        <item name="android:textColor">#ff0000</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 大文字 -->
+    <style name="store_high_text">
+        <item name="android:textColor">@color/store_high_text</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <!-- 中文字 -->
+    <style name="store_middle_text">
+        <item name="android:textColor">@color/store_middle_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!-- 小文字 -->
+    <style name="store_small_text">
+        <item name="android:textColor">@color/store_small_text</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="store_detail_info_text">
+        <item name="android:textColor">#78715e</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="map_store_high_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="map_store_middle_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="map_store_small_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="about_text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="aboutcontent_text">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="product_text">
+        <item name="android:textColor">@color/title_text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="RankSelfValue_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Album_title_text">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <!-- Define the list items style begin -->
+    <style name="list_item_seperator_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="list_item_cell_seperator_layout">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <!-- 通用按钮 样式 -->
+    <style name="StyleButtonGeneral">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">3.0</item>
+        <item name="android:background">@drawable/new_btn_general</item>
+    </style>
+    <!-- 返回按钮 样式 -->
+    <style name="StyleButtonReturn">
+        <item name="android:layout_width">@dimen/title_height</item>
+        <item name="android:layout_height">@dimen/title_height</item>
+        <item name="android:background">@drawable/new_btn_return</item>
+    </style>
+
+    <!-- 排行榜按钮 样式 -->
+    <style name="StyleButtonRank">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">3.0</item>
+        <item name="android:background">@drawable/new_btn_general</item>
+    </style>
+
+    <!-- 通用按钮 样式 -->
+    <style name="Styletag">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+	<!-- <item name="android:background">@drawable/new_tag</item> -->
+    
+    <!-- 通用按钮 样式小 -->
+    <style name="StyleButtonGeneralSmall">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">3.0</item>
+        <item name="android:background">@drawable/new_btn_general</item>
+    </style>
+    
+    <!-- 聊天字体sytle -->
+    <style name="StyleChat">
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:shadowColor">#D7D4D4</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+    
+    <!--  活动字体sytle -->
+    <style name="StyleActivity">
+        <item name="android:textStyle">bold</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+
+    <style name="animation" parent="android:Animation">
+       	<item name="android:windowEnterAnimation">@anim/scale_zoomin</item>  //进入时的动画      
+    	<item name="android:windowExitAnimation">@anim/scale_zoomout</item>//退出时的动画 
+     </style>
+     
+    <style name="putupinanimation" parent="android:Animation">
+       	<item name="android:windowEnterAnimation">@anim/dialog_enter</item>  //进入时的动画      
+    	<item name="android:windowExitAnimation">@anim/dialog_exit</item>//退出时的动画 
+     </style>
+
+    <style name="nmgc_dialog_center" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="nmgc_common_text">
+        <item name="android:textSize">@dimen/nmgc_login_common_text_size</item>
+        <item name="android:textColor">#1a1a1a</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="nmgc_login_button_text">
+        <item name="android:textSize">@dimen/nmgc_login_button_text_size</item>
+        <item name="android:textColor">#3e3e3e</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="nmgc_activitynotfloat">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="nmgc_base_textview_wrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="nmgc_base_textview_fill">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="nmgc_boy_click_dialog_text" parent="nmgc_base_textview_wrap">
+        <item name="android:textSize">@dimen/nmgc_login_common_text_size</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#331903</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <!-- Define the list items style end -->
+
+</resources>

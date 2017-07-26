@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainad"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dp" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:padding="5dp"
+        android:background="@drawable/glass0" >
+        <Button
+            android:id="@+id/btnAccount"
+            style="@style/StyleButtonGeneralSmall"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/title_left_margin"
+            android:layout_marginRight="10dip"
+            android:scaleType="fitCenter"
+            android:text="获取兑奖码" />
+        <Button
+            android:id="@+id/btnadReturn"
+           	style="@style/StyleButtonReturn"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/title_left_margin"
+            android:layout_marginRight="10dip"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titlebar"
+        android:orientation="vertical" >
+		
+        <WebView
+            android:id="@+id/wvad"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:visibility="visible" />
+        
+           <ProgressBar
+            android:id="@+id/progressBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp" />	
+    </RelativeLayout>
+
+</RelativeLayout>

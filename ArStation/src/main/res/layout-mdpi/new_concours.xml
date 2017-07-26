@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_height="fill_parent" >
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/new_girl" />
+    
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:background="@drawable/glass0" >
+
+        <TextView
+            android:id="@+id/tvConcoursContent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/rlbar"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:id="@+id/rlbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true" >
+
+            <Button
+                style="@style/StyleButtonGeneralSmall"
+                android:id="@+id/btnjoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="参加" />
+
+            <Button
+                 style="@style/StyleButtonGeneralSmall"
+                android:id="@+id/btnabort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="60dp"
+                android:text="放弃" />
+            
+            <Button
+                 style="@style/StyleButtonGeneralSmall"
+                android:id="@+id/btnwait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="60dp"
+                android:text="挂起" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

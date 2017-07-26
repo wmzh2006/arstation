@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMaintip"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:visibility="gone" >
+
+    <TextView
+        android:id="@+id/tvMaintips"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/green"
+        android:shadowColor="@color/black"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:background="@drawable/new_tips_bg"
+        android:textSize="20sp" />
+
+</LinearLayout>

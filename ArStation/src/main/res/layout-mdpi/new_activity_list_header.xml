@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:collapseColumns="4"
+        android:stretchColumns="0, 1, 2, 3">
+
+        <TableRow
+            android:id="@+id/stock_list_header_row"
+            android:layout_height="25dp"
+            android:minHeight="25dp"
+            android:background="@drawable/glass0"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/stock_list_header_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="比赛"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/stock_list_header_symbol"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="时间"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/stock_list_header_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="状态"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/stock_list_header_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

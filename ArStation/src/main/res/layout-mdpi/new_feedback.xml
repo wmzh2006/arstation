@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	android:background="@drawable/gdbj" >
+	<RelativeLayout android:layout_width="fill_parent"
+	    android:layout_height="45dp"
+	    android:layout_marginBottom="5dp"
+	    android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+	    android:background="@drawable/glass0">
+	    <TextView android:layout_width="wrap_content"
+	        android:layout_height="fill_parent"
+	        android:textSize="20sp"
+	        android:text="游戏反馈"
+	        android:gravity="center"
+	        android:textColor="@color/white"
+	        android:shadowColor="@color/Black"
+	        android:shadowDx="2.0"
+	        android:shadowDy="2.0"
+	        android:shadowRadius="3.0"
+	        android:layout_centerInParent="true"/>
+	</RelativeLayout>
+	<EditText android:id="@+id/feedback_edit_text"
+		android:background="@drawable/new_edittext_bg"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="top" android:textSize="16sp"
+		android:minLines="5" android:focusable="true"
+		android:minHeight="24dip"
+		android:maxLength="80"
+		android:layout_marginBottom="10dip"
+		android:focusableInTouchMode="true" android:isScrollContainer="false"
+		android:layout_weight="1"
+		android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+		android:padding="4dip" android:autoText="true" android:capitalize="sentences"
+		android:hint="请输入您的建议或意见" 
+		android:inputType="textShortMessage|textAutoCorrect|textCapSentences|textMultiLine"/>
+
+	<TextView
+	    android:id="@+id/feedback_counter"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="10dip"
+	    android:gravity="right"
+	    android:text="0/80"
+	    android:textColor="@color/white"
+	    android:textSize="14sp" />
+		
+	<LinearLayout 
+		android:orientation="horizontal" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:gravity="right" android:padding="10dip">
+		<Button android:id="@+id/btnSend"
+		    style="@style/StyleButtonGeneralSmall"
+			android:layout_width="80dip" android:layout_height="36dip"
+			android:text="发送" android:layout_marginRight="5dip" />
+		<Button android:id="@+id/cancel"
+		     style="@style/StyleButtonGeneralSmall"
+			android:layout_width="80dip" android:layout_height="36dip"
+			android:text="取消"/>
+	</LinearLayout>
+</LinearLayout>	
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:padding="10dp"
+    android:background="@drawable/gdbj"
+    >
+    <ListView
+        android:id="@+id/change_dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+		android:cacheColorHint="#00000000"
+		android:divider="@drawable/new_h_split"
+		android:scrollbars="vertical"
+		android:fadingEdge="none" 
+        android:dividerHeight="1dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llactivity_page"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_below="@+id/titlebar"
+    android:background="@null"
+    android:orientation="vertical" >
+
+  
+    <LinearLayout
+        android:id="@+id/llRemarksa"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/new_activity_list_header"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:paddingLeft="8dp"
+   			android:paddingRight="8dp"
+   			android:orientation="horizontal"
+   			android:background="@drawable/gdbj"
+            android:layout_weight="0.71" >
+
+            <ListView
+                android:id="@+id/lvdaily"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@color/trans"
+                android:divider="@drawable/list_line"
+                android:dividerHeight="1dp"
+                android:smoothScrollbar="true"
+                android:visibility="visible" />
+
+            <ListView
+                android:id="@+id/lvweekly"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@color/trans"
+                android:divider="@drawable/list_line"
+                android:dividerHeight="1dp"
+                android:smoothScrollbar="true"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lvmonthly"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@color/trans"
+                android:divider="@drawable/list_line"
+                android:dividerHeight="1dp"
+                android:smoothScrollbar="true"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lvcompetition"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@color/trans"
+                android:divider="@drawable/list_line"
+                android:dividerHeight="1dp"
+                android:smoothScrollbar="true"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/titlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:visibility="gone"
+            android:background="@drawable/new_ttitle">
+
+            <!-- 标题文字 -->
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+            <!-- logo -->
+
+            <Button
+                android:id="@+id/btneturn"
+                style="@style/StyleButtonGeneral"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/title_left_margin"
+                android:layout_marginRight="10dip"
+                android:scaleType="fitCenter"
+                android:text="@string/Store_Change_Return" />
+        </RelativeLayout>
+        
+          <!-- tab栏 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/glass0"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <Button
+            android:id="@+id/btnDaily"
+            style="@style/StyleButtonGeneral"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible"
+            android:layout_centerVertical="true"
+            android:text="@string/activity_tag_daily" />
+
+        <Button
+            android:id="@+id/btnWeekly"
+            style="@style/StyleButtonGeneral"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnDaily"
+            android:text="@string/activity_tag_weekly" />
+
+        <Button
+            android:id="@+id/btnMonthly"
+            style="@style/StyleButtonGeneral"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnWeekly"
+            android:text="@string/activity_tag_monthly" />
+
+        <Button
+            android:id="@+id/btnCompetition"
+            style="@style/StyleButtonGeneral"
+            android:layout_marginLeft="10dip"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:text="@string/activity_tag_competition" />
+
+        <Button
+            android:id="@+id/btnactivity_return"
+            android:background="@drawable/new_btn_return"
+            android:layout_width="48dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dip"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

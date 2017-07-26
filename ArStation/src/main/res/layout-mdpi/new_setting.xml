@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainsetting"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dp" >
+
+    <LinearLayout
+        android:id="@+id/llRemarks"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/titlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/title_height"
+            android:padding="4dp"
+            android:background="@drawable/glass0" >
+
+            <TextView
+                android:id="@+id/tvProperty"
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:text="设置" />
+            <Button android:id="@+id/btnSetingReturn"
+                android:layout_width="@dimen/title_height"
+                android:layout_height="@dimen/title_height"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/new_btn_return"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@+id/svcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dip"
+            android:fadingEdge="vertical"
+            android:background="@drawable/gdbj"
+            android:scrollbars="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llsettiong"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/llScreenLight"
+                    android:layout_width="fill_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="6dip"
+                    android:background="@drawable/glass0" >
+
+                    <TextView
+                        android:id="@+id/tvScreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dip"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="屏幕亮度" />
+
+                    <LinearLayout
+                        android:id="@+id/llDark"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginTop="5dp"
+                        android:layout_toRightOf="@+id/tvScreen" >
+
+                        <ImageView
+                            android:id="@+id/ivDark"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/dark"
+                            android:scaleType="fitCenter" />
+                    </LinearLayout>
+
+                    <SeekBar
+                        android:id="@+id/sbScreen"
+                        android:layout_width="250dip"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toLeftOf="@+id/lllight"
+                        android:layout_toRightOf="@+id/llDark"
+                        android:progressDrawable="@drawable/color_progressbar4"
+                        android:max="100" />
+
+                    <LinearLayout
+                        android:id="@+id/lllight"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="10dp" >
+
+                        <ImageView
+                            android:id="@+id/ivLight"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@drawable/light"
+                            android:scaleType="fitCenter" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <!-- 震动 -->
+
+                <RelativeLayout
+                    android:id="@+id/llShaka"
+                    android:layout_width="fill_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="6dip"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:visibility="gone"
+                    android:background="@drawable/glass0" >
+
+                    <TextView
+                        android:id="@+id/tvShaka"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dip"
+                         android:textStyle="bold"
+                          android:textColor="@color/white"
+                        android:text="震动" />
+
+                    <ToggleButton
+                        android:id="@+id/tbtnShaka"
+                        style="@style/StyleButtonGeneralSmall"
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dp"
+                        android:textOff="@string/setting_close"
+                        android:textOn="@string/setting_open" />
+                </RelativeLayout>
+
+                <!-- 音效 -->
+
+                <RelativeLayout
+                    android:id="@+id/llSound"
+                    android:layout_width="fill_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="6dip"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/glass0" >
+
+                    <TextView
+                        android:id="@+id/tvSound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dip"
+                         android:textStyle="bold"
+                          android:textColor="@color/white"
+                        android:text="音效" />
+
+                    <ToggleButton
+                        android:id="@+id/tbtnSound"
+                         style="@style/StyleButtonGeneralSmall"
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dp"
+                        android:textOff="@string/setting_close"
+                        android:textOn="@string/setting_open" 
+                        />
+                </RelativeLayout>
+                <!-- 音乐 -->
+
+                <RelativeLayout
+                    android:id="@+id/llMusic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="6dip"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/glass0" >
+
+                    <TextView
+                        android:id="@+id/tvMusic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dip"
+                         android:textStyle="bold"
+                          android:textColor="@color/white"
+                        android:text="背景音乐" />
+
+                    <ToggleButton
+                        android:id="@+id/tbtnMusic"
+                         style="@style/StyleButtonGeneralSmall"
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dp"
+                        android:textOff="@string/setting_close"
+                        android:textOn="@string/setting_open" />
+                </RelativeLayout>
+                <!-- 下载 -->
+
+                <RelativeLayout
+                    android:id="@+id/llDownload"
+                    android:layout_width="fill_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="6dip"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:background="@drawable/glass0" >
+
+                    <TextView
+                        android:id="@+id/tvDownload"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="5dip"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="仅wifi下载 图片" />
+
+                    <ToggleButton
+                        android:id="@+id/tbtnDownload"
+                        style="@style/StyleButtonGeneralSmall"
+                        android:layout_width="80dp"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="10dp"
+                        android:textOff="@string/setting_close"
+                        android:textOn="@string/setting_open" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

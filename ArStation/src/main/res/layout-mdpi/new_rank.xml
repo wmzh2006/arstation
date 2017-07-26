@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainrank"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dp"
+    android:visibility="gone" >
+        <!-- title -->
+
+        <RelativeLayout
+            android:id="@+id/titlebar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/rank_title_height"
+            android:background="@drawable/glass0"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp" >
+
+            <!-- 个人信息 -->
+
+            <RelativeLayout
+                android:id="@+id/llUserPic"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:padding="3dp" >
+
+                <ImageView
+                    android:id="@+id/ivRankhead"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitCenter" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llWin"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="5dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvwinTitle"
+                    style="@style/Styletag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/Victory" />
+
+                <TextView
+                    android:id="@+id/tvwin"
+                    style="@style/RankSelfValue_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="8"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llRank"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="3dip"
+                android:layout_marginTop="5dip"
+                android:layout_toLeftOf="@+id/llWin"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvLevelTitle"
+                    style="@style/Styletag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/Level" />
+
+                <TextView
+                    android:id="@+id/tvLevel"
+                    style="@style/RankSelfValue_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="8"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMoney"
+                android:layout_width="60dip"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="3dip"
+                android:layout_marginTop="5dip"
+                android:layout_toLeftOf="@+id/llRank"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvMoneyTitle"
+                    style="@style/Styletag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/RankOfMoney" />
+
+                <TextView
+                    android:id="@+id/tvMoney"
+                    style="@style/RankSelfValue_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="8"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignBottom="@+id/tvPlayerAttr"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/llUserPic"
+                />
+
+            <TextView
+                android:id="@+id/tvPlayerAttr"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/llUserPic"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/llMoney"
+                android:layout_toRightOf="@+id/icon"
+                android:gravity="left"
+                android:paddingTop="-5dp"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvPlayerName"
+                style="@style/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/icon"
+                android:layout_alignTop="@+id/llUserPic"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dip"
+                android:layout_toLeftOf="@+id/llMoney"
+                android:singleLine="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llRemarks"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/titlebar"
+            android:orientation="vertical" >
+
+            <!-- 内容区 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.71"
+                android:background="@drawable/gdbj"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal"
+                android:paddingRight="10dp" >
+
+                <ListView
+                    android:id="@+id/lvMoney"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@color/trans"
+                    android:divider="@drawable/list_line"
+                    android:dividerHeight="1dp"
+                    android:smoothScrollbar="true"
+                    android:visibility="visible" />
+
+                <ListView
+                    android:id="@+id/lvAward"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@color/trans"
+                    android:divider="@drawable/list_line"
+                    android:dividerHeight="1dp"
+                    android:smoothScrollbar="true"
+                    android:visibility="gone" />
+
+                <ListView
+                    android:id="@+id/lvWin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="@color/trans"
+                    android:divider="@drawable/list_line"
+                    android:dividerHeight="1dp"
+                    android:smoothScrollbar="true"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <!-- tab栏 -->
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dip"
+                android:background="@drawable/glass0"
+                android:padding="5dp" >
+
+                <Button
+                    android:id="@+id/btnTabMoney"
+                    style="@style/StyleButtonGeneral"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="@string/RankOfMoney"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnAward"
+                    style="@style/StyleButtonGeneral"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/btnTabMoney"
+                    android:gravity="center"
+                    android:text="@string/RankOfAward"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnWin"
+                    style="@style/StyleButtonGeneral"
+                    android:layout_width="100dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/btnAward"
+                    android:gravity="center"
+                    android:text="@string/RankOfWin"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/btnRankReturn"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/new_btn_return" />
+            </RelativeLayout>
+        </LinearLayout>
+
+</RelativeLayout>

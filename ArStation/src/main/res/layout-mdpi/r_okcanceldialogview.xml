@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/btn_back"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dip"
+            android:text="@string/Update_Title"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/dialog_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:gravity="center_horizontal"
+            android:text="@string/Update_Content_tip"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <com.funoble.myarstation.view.MyProgressBar
+            android:id="@+id/pbPercent"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:progressDrawable="@drawable/color_progressbar4" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/ok"
+                style="@style/StyleButtonGeneralSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:text="@string/Update_Ok"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnUserWeb"
+                style="@style/StyleButtonGeneralSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:text="@string/Update_Web"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cancel"
+                style="@style/StyleButtonGeneralSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="40dip"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="@string/Update_Cancel"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+</LinearLayout>

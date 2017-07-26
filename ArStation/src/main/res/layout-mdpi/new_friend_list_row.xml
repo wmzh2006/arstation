@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlRankItem"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:paddingBottom="8dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="7dp">
+    <!-- 图片 -->
+    <LinearLayout
+        android:id="@+id/llUserPic"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:padding="3dp"
+        android:layout_alignParentLeft="true">
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter"/>
+    </LinearLayout>
+    <!-- 名称 -->
+    <TextView
+        android:id="@+id/tvFriendNick"
+        style="@style/store_middle_text"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/llUserPic"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/llUserPic"
+        android:singleLine="true"
+        android:textSize="16dp" 
+        android:textColor="@color/white"
+        android:gravity="center_vertical"/>
+
+    <RatingBar
+        android:id="@+id/drunk0"
+        style="@style/StarbigRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/llUserPic"
+        android:layout_alignLeft="@+id/tvFriendNick"
+        android:minHeight="21dip"
+        android:numStars="5" />
+
+    <Button android:id="@+id/btnDetail"
+        style="@style/StyleButtonGeneralSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/FriendDetail"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

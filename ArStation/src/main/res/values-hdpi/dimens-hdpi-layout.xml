@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- charge -->
+    <dimen name="nmgc_charge_height">463dp</dimen>
+    <dimen name="nmgc_charge_width">311dp</dimen>
+    <dimen name="nmgc_charge_content_height">400dp</dimen>
+    <dimen name="nmgc_charge_index_height">33dp</dimen>
+    <dimen name="nmgc_charge_index_margin">23dp</dimen>
+    <dimen name="nmgc_charge_index_margin_top">7dp</dimen>
+    <dimen name="nmgc_charge_input_width">133dp</dimen>
+    <dimen name="nmgc_charge_input_height">33dp</dimen>
+    <dimen name="nmgc_charge_input_margin_left">9dp</dimen>
+    <dimen name="nmgc_charge_input_margin_top">13dp</dimen>
+    <dimen name="nmgc_charge_input_margin_bottom">13dp</dimen>
+    <dimen name="nmgc_charge_content_margin_top">15dp</dimen>
+    <dimen name="nmgc_charge_content_hint_margin_top">10dp</dimen>
+    <dimen name="nmgc_charge_content_hint_margin_bottom">7dp</dimen>
+    <dimen name="nmgc_charge_content_hint_margin_left">8dp</dimen>
+    <dimen name="nmgc_charge_button_height">40dp</dimen>
+    <dimen name="nmgc_charge_button_margin">3dp</dimen>
+    <dimen name="nmgc_charge_bottom_button_width">250dp</dimen>
+    <dimen name="nmgc_charge_bottom_button_height">38dp</dimen>
+    <dimen name="nmgc_charge_card_input_height">33dp</dimen>
+    <dimen name="nmgc_charge_info_maxwidth">200dp</dimen>
+    <dimen name="nmgc_charge_info_margin_left">10dp</dimen>
+    <dimen name="nmgc_charge_ok_button_margin_bottom">15dp</dimen>
+    <dimen name="nmgc_charge_bind_ok_width">101dp</dimen>
+    <dimen name="nmgc_charge_bind_ok_height">43dp</dimen>
+
+    <!-- register -->
+    <dimen name="nmgc_reg_stepone_input_margin_top">12dp</dimen>
+    <dimen name="nmgc_reg_stepone_input_margin_left">20dp</dimen>
+    <dimen name="nmgc_reg_stepone_input_height">41dp</dimen>
+    <dimen name="nmgc_reg_stepone_input_text_margin_left">9dp</dimen>
+    <dimen name="nmgc_reg_stepone_input_margin_bottom">31dp</dimen>
+    <dimen name="nmgc_reg_stepone_hint_margin_left">23dp</dimen>
+    <dimen name="nmgc_reg_stepone_button_height">41dp</dimen>
+    <dimen name="nmgc_reg_stepone_button_width">262dp</dimen>
+    <dimen name="nmgc_reg_stepone_button_margin_top">7dp</dimen>
+    <dimen name="nmgc_reg_stepthree_hint1_margin">5dp</dimen>
+    <dimen name="nmgc_reg_stepthree_hint2_margin_bottom">11dp</dimen>
+    <dimen name="nmgc_reg_steptwo_hint_margin_top">21dp</dimen>
+    <dimen name="nmgc_reg_steptwo_count_margin_top">27dp</dimen>
+    <dimen name="nmgc_reg_steptwo_count_width">245dp</dimen>
+    <dimen name="nmgc_reg_steptwo_count_height">33dp</dimen>
+    <!-- charge land -->
+ 
+    <dimen name="nmgc_charge_land_width">512dp</dimen>
+    <dimen name="nmgc_charge_land_height">266dp</dimen>
+    <dimen name="nmgc_charge_land_index_margin_left">23dp</dimen>
+    <dimen name="nmgc_charge_land_index_height">223dp</dimen>
+    <dimen name="nmgc_charge_land_index_margin_top">11dp</dimen>
+    <dimen name="nmgc_charge_land_index_button_height">55dp</dimen>
+    <dimen name="nmgc_charge_land_index_button_width">67dp</dimen>
+    <dimen name="nmgc_charge_land_index_tag_margin_left">4dp</dimen>
+    <dimen name="nmgc_charge_land_index_tag_content_left">11dp</dimen>
+    <dimen name="nmgc_charge_land_content_margin_top">7dp</dimen>
+    <dimen name="nmgc_charge_land_content_height">193dp</dimen>
+    <dimen name="nmgc_charge_land_content_width">399dp</dimen>
+    <dimen name="nmgc_charge_phonecard_land_hint1_margin_top">10dp</dimen>
+    <dimen name="nmgc_charge_phonecard_land_hint1_margin_bottom">9dp</dimen>
+    <dimen name="nmgc_charge_phonecard_land_button_height">38dp</dimen>
+    <dimen name="nmgc_charge_phonecard_land_okbutton_height">41dp</dimen>
+    <dimen name="nmgc_charge_phonecard_land_okbutton_width">330dp</dimen>
+    <!-- 
+    <dimen name="nmgc_charge_zhifubao_land_buttons_margin">47dp</dimen>
+    <dimen name="nmgc_charge_zhifubao_land_input_width">159dp</dimen>
+    <dimen name="nmgc_charge_zhifubao_land_hint2_margin_top">3dp</dimen>
+
+   -->
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainframe"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.funoble.myarstation.game.GameCanvas
+        android:id="@+id/viewLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <FrameLayout
+        android:id="@+id/mainview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvMaintips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:shadowColor="@color/black"
+        android:shadowDx="2.0"
+        android:shadowDy="2.0"
+        android:shadowRadius="2.0"
+        android:textColor="@color/white"
+        android:background="@drawable/new_tips_bg"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</FrameLayout>

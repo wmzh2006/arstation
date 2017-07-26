@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlmsgitem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:paddingBottom="8dp"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp"
+    android:paddingTop="7dp" >
+    <!-- 图片 -->
+    <LinearLayout
+        android:id="@+id/llmsgUserPic"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:padding="2dp" >
+        <ImageView
+            android:id="@+id/ivmsgPic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter" />
+    </LinearLayout>
+
+    <!-- 名称 -->
+    <TextView
+        android:id="@+id/tvmsgNick"
+        style="@style/store_middle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/llmsgUserPic"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="啦啦啦啦啦啦"
+        android:textColor="@color/blue"
+        android:textSize="20dp" />
+    <!-- 时间 -->
+    <TextView
+        android:id="@+id/tvmsgTime"
+        style="@style/store_middle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@+id/tvmsgNick"
+        android:layout_toRightOf="@+id/tvmsgNick"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="3334"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+    
+    <TextView
+        android:id="@+id/tvmsgContent"
+        style="@style/store_middle_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/llmsgUserPic"
+        android:layout_below="@+id/tvmsgNick"
+        android:gravity="center_vertical"
+        android:singleLine="false"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+    <LinearLayout 
+        android:id="@+id/llselectBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvmsgContent"
+	    android:layout_alignParentRight="true">
+	<TextView 
+	    android:id="@+id/tvmsgDelect"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:text="删除"
+	    android:textColor="@color/new_textcolor"
+	    android:layout_marginRight="10dp"
+	    android:textSize="20sp"
+	    />
+	<TextView 
+	    android:id="@+id/tvmsgAnswer"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:text="回复"
+	    android:textColor="@color/new_textcolor"
+	    android:layout_marginRight="10dp"
+	    android:textSize="20sp"
+	    />
+	<TextView 
+	    android:id="@+id/tvmsgRefuse"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:text="拒绝"
+	    android:textColor="@color/new_textcolor"
+	    android:textSize="20sp"
+	    android:layout_marginRight="10dp"
+	    android:visibility="gone"
+	    />
+	<TextView 
+	    android:id="@+id/tvmsgAccept"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" 
+	    android:text="接受"
+	    android:textColor="@color/new_textcolor"
+	    android:textSize="20sp"
+	    android:layout_marginRight="10dp"
+	    android:visibility="gone"
+	    />
+	</LinearLayout>
+</RelativeLayout>

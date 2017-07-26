@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainhelp"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dp" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/glass0" >
+
+        <!-- 标题文字 -->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/HelpTitlName" />
+        <!-- logo -->
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/titlebar"
+            android:layout_above="@+id/rrTag"
+            android:orientation="vertical" >
+
+            <WebView
+                android:id="@+id/wvHelp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#00000000"
+                android:visibility="gone" />
+
+            <WebView
+                android:id="@+id/wvAbout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#00000000"
+                android:visibility="visible" />
+        </LinearLayout>
+        <!-- tab栏 -->
+
+        <RelativeLayout
+            android:id="@+id/rrTag"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:padding="5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/glass0">
+
+            <Button
+                android:id="@+id/btnHelp"
+                style="@style/StyleButtonGeneralSmall"
+                android:layout_width="100dip"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="@string/Help_Tag_Help" />
+
+            <Button
+                android:id="@+id/btnAbout"
+                style="@style/StyleButtonGeneralSmall"
+                android:layout_width="100dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/btnHelp"
+                android:gravity="center"
+                android:text="@string/Help_Tag_About" />
+
+            <Button
+                android:id="@+id/btnHelpReturn"
+                style="@style/StyleButtonReturn"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/title_left_margin"
+                android:layout_marginRight="10dip"
+                android:scaleType="fitCenter" />
+        </RelativeLayout>
+
+</RelativeLayout>

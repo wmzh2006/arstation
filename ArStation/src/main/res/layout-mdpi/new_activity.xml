@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainActivity"
+    android:layout_width="fill_parent"
+    android:padding="8dp"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/llactivity_page"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/new_activity_list_page"
+        android:visibility="visible" />
+
+    <include
+        android:id="@+id/rlactivity_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/new_activity_detail_page"
+        android:visibility="gone" />
+
+</RelativeLayout>

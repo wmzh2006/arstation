@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="hello">Hello World, ArStation!</string>
+    <string name="app_name">ARStation</string>
+    <string name="Key_SaveData_Login_ID">SaveData_Login_ID</string>
+    <string name="Key_SaveData_Login_Password">SaveData_Login_Password</string>
+    <string name="Input_Hint_Login_ID">请输入账号</string>
+    <string name="Input_Hint_Login_Password">请输入密码</string>
+    <string name="Input_Hint_ID">请输入6~12位数字</string>
+    <string name="Input_Hint_Password">请输入6~30登录密码</string>
+    <string name="Input_Hint_Password_Confirm">请再次输入密码</string>
+    <string name="Input_Hint_CreateRole_NAME">请输入您的昵称</string>
+    <string name="Description_CreateRole_Player0">九九隆骰魔</string>
+    <string name="Description_CreateRole_Player1">大润发骰魔</string>
+    <string name="ShowTips">账号或密码为空，请重新输入</string>
+    <!-- 主页 -->
+    <string name="Description_HomeScreen_FeedBack">感谢您对我们游戏的关注，您的意见对我们至关重要，请注意一下几点：\n
+1.这个信息系统暂时只提供发送；\n
+2.请发送BUG、建议、不满、新想法等内容；\n
+3.您发送的内容我们会认真地筛选采纳；\n
+4.我们期待您的反馈，给您更好的游戏体验。\n\n</string>
+	<string name="Return_LoginScreen_Ok">确定</string>
+    <string name="Return_LoginScreen_Cancel">取消</string>
+    <string name="Return_LoginScreen_tip_title">退出游戏</string>
+    <string name="Return_LoginScreen_tip_Content">您要退出吗？</string>
+    <string name="QuestFeekBack_Waiting">提交反馈信息中，请稍等</string>
+    <string name="FeekBack_Empty">内容为空</string>
+    <string name="share_text">凤智大话骰，最热门的酒吧摇骰子游戏 ，男士女士应酬的必备训练场  <xliff:g id="key1">%s</xliff:g> </string>
+    <string name="share_weibo">凤智大话骰，最热门的酒吧摇骰子游戏 ，男士女士应酬的必备训练场 <xliff:g id="key1">%s</xliff:g> </string>
+	<!-- 网络连接提示 -->
+    <string name="Loading_Login">登录验证中，请稍等</string>
+    <string name="Loading_String">请求数据中，请稍等</string>
+    <string name="UpLoading_String">上传图片中，请稍等</string>
+    <string name="Req_Register_Failed">请求数据失败！</string>
+    <string name="Req_FeekBack_Failed">发送反馈信息数据失败！</string>
+    <string name="Req_Register_Success">注册成功！</string>
+    <string name="Connect_Network_Failed">连接网络失败！</string>
+    <string name="Connect_Network_DisConnect">网络异常！</string>
+    <!-- 游戏界面 -->
+    <string name="Return_HomeScreen_Ok">确定</string>
+    <string name="Return_HomeScreen_Cancel">取消</string>
+    <string name="Return_HomeScreen_tip_title">返回主页</string>
+    <string name="Return_HomeScreen_tip_Content">您需要离开房间吗？</string>
+    <string name="Return_HomeScreen_tip_Content_Warning">正在游戏中，逃跑会被罚<xliff:g id="key1">%d</xliff:g>金币！</string>
+    <string name="To_SelectRoom_Ok">确定</string>
+    <string name="To_SelectRoom_Cancel">取消</string>
+    <string name="To_SelectRoom_tip_title">选择其他房间</string>
+    <string name="To_SelectRoom_tip_Content">您需要离开房间吗？</string>
+    <string name="To_SelectRoom_tip_Content_Warning">正在游戏中，逃跑剩余的酒不会退，还会被罚一打酒的钱！</string>
+    <!-- 活动报名提示 -->
+    <string name="Motion_SignUp_Title">系统提示</string>
+    <string name="Motion_SignUp_Content">活动报名</string>
+    <string name="Motion_SignUp_Ok">报名</string>
+    <string name="Motion_SignUp_Later">稍后再说</string>
+    <string name="Motion_SignUp_Cancel">放弃</string>
+    <!-- 活动进场提示 -->
+    <string name="Motion_Start_Title">系统提示</string>
+    <string name="Motion_Start_Content">活动快开始了，进场？</string>
+    <string name="Motion_Start_Ok">现在就去</string>
+    <string name="Motion_Start_Later">稍后再说</string>
+    <string name="Motion_Start_Cancel">放弃</string>
+    <!-- 商城 -->
+    <string name="Store_Tag_Goods">凤币商品</string>
+    <string name="Store_Tag_Vip">VIP月卡</string>
+    <string name="Store_Tag_MyGoods">我的物品</string>
+    <string name="Store_Tag_BuyDetail">金币商品</string>
+    <string name="Store_Btn_Buy">购买</string>
+    <string name="GoodOverPlusTime"><xliff:g id="key1">%s</xliff:g>天</string>
+    <string name="Store_buyTime">购买时间</string>
+    <string name="Store_tip">剩余</string>
+    <string name="Store_detail_tip">总购金额<xliff:g id="key1">%d</xliff:g></string>
+    <string name="consumer_credit">请选择充值面额：</string>
+    <string name="Store_Change_title">凤智币充值</string>
+    <string name="Store_Change_Return">返回</string>
+    <string name="Store_Change_Next">下一步</string>
+    <string name="Store_Change_text">充值</string>
+    <string name="Store_Changeto_text">代友充值</string>
+    <string name="Store_Change_Tips">【温馨提示】\n[1] 1元兑换100凤智币;\n[2] 使用易宝支付平台，支持银行卡、手机充值卡、游戏点卡。</string>
+    <string name="VipNextLevelTimeexpiry">已过期</string>
+    <string name="VipNextLevelTimeunuse">未开通</string>
+    <string name="VipNextLevelTime">离到期还剩<xliff:g id="key1">%d</xliff:g>天</string>
+    <string name="VipNextLevel">离升级还剩<xliff:g id="key1">%d</xliff:g>天</string>
+    <string name="VipNextLevelMax">已经到顶级</string>
+    <string name="SuperVipNextLevel">离升级还剩<xliff:g id="key1">%d</xliff:g>点</string>
+    <string name="VipLevel">VIP <xliff:g id="key1">%d</xliff:g></string>
+    <string name="confirmBuyTitile">购买提示</string>
+    <string name="confirmBuyTips">这商品购买后无法退换，请问确认购买吗？</string>
+    <!-- 帮助 -->
+    <string name="HelpTitlName">游戏帮助</string>
+    <string name="Help_Tag_Help">游戏规则</string>
+    <string name="Help_Tag_About">关于我们</string>
+    <!-- 新手教程 -->
+    <string name="Tutorial_Start">开始游戏</string>
+    <string name="Tutorial_Agian">继续观看</string>
+    <string name="Tutorial_Conntent">教程看完了，到游戏体验大话骰的魅力吧！</string>
+    <string name="Tutorial_OverLeap">  跳过</string>
+    <!-- 更新 -->
+    <string name="Update_Title">版本更新</string>
+    <string name="Update_Content_tip">有新版本是否更新，确定更新版本</string>
+    <string name="Update_Content">如果下载速度过慢，请点击手动下载 </string>
+    <string name="Update_Ok">确定</string>
+    <string name="Update_Cancel">取消</string>
+    <string name="Update_Web">手动下载</string>
+    <!-- 排行榜 -->
+    <string name="RankOfMoney">财富榜</string>
+    <string name="RankOfAward">等级榜</string>
+    <string name="RankOfWin">魅力榜</string>
+    <string name="Wealths">金币</string>
+    <string name="Level">等级</string>
+    <string name="Victory">魅力</string>
+    <string name="Friend">加为好友</string>
+    <string name="BeFriend">查看详情</string>
+    <string name="Trance">追踪</string>
+    <string name="Rank_OnLine">闲置</string>
+    <string name="Rank_OffLine">离线</string>
+     <string name="RankValue"><xliff:g id="key1">%d</xliff:g></string>
+     <string name="RankValue_Null"><xliff:g id="key1">%s</xliff:g></string>
+     <!-- 好友信息 -->
+    <string name="sharetext"><xliff:g id="key1">%s</xliff:g></string>
+    <string name="online">在线</string>
+    <string name="offline">离线</string>
+    <string name="ongame">在游戏中</string>
+     <string name="FriendRankValue">第<xliff:g id="key1">%d</xliff:g></string>
+     <string name="FriendRankValue_Null">第<xliff:g id="key1">%d</xliff:g>名外</string>
+     <string name="FriendAmount">好友(<xliff:g id="key1">%d</xliff:g>/<xliff:g id="key2">%d</xliff:g>)</string>
+     <string name="FriendDetail">详情</string>
+     <!-- 相册 -->
+    <string name="create_no_sdcard">找不到内存卡</string>
+    <string name="Image_null">没有可上传图片</string>
+    <string name="update">上传</string>
+    <string name="cancel">取消</string>
+    <string name="running_face_detection">请稍等</string>
+    <string name="multiface_crop_help">&quot;轻点一张脸开始裁剪。&quot;</string>
+    <!-- 选择房间 -->
+    <string name="select_room">您的金币数量不能满足该房间的进入条件，请选择其他房间。</string>
+    <string name="start">快速开始</string>
+    <!-- 活动 -->
+    <string name="activity_list_title">活动页面</string>
+    <string name="activity_detail_title">活动说明</string>
+    <string name="activity_detail_result">活动结果</string>
+    <string name="activity_tag_daily">每日活动</string>
+    <string name="activity_tag_weekly">每周活动</string>
+    <string name="activity_tag_monthly">每月活动</string>
+    <string name="activity_tag_competition">争霸赛</string>
+    <string name="activity_status_signup">报名中</string>
+    <string name="activity_status_getready">即将开始</string>
+    <string name="activity_status_underway">正在进行</string>
+    <string name="activity_status_enrolled">报了名，但没开始</string>
+    <string name="activity_status_end">已结束</string>
+    <string name="activity_status_result">查看结果</string>
+    <string name="activity_prompt">系统提示</string>
+    <string name="activity_prompt_contentFB">参与<xliff:g id="key1">%s</xliff:g>，需要<xliff:g id="key2">%d</xliff:g>凤智币</string>
+    <string name="activity_prompt_contentGB">参与<xliff:g id="key1">%s</xliff:g>，需要<xliff:g id="key2">%d</xliff:g>金币</string>
+    <string name="activity_prompt_contentLEV">参与<xliff:g id="key1">%s</xliff:g>，需要<xliff:g id="key2">%d</xliff:g>等级</string>
+    <string name="activity_enroll">报名</string>
+    <!-- 设置 -->
+    <string name="setting_open">开启</string>
+    <string name="setting_close">关闭</string>
+    <!-- 聊天 -->
+    <string name="chat_tip">发送内容不能为空，请重新输入！</string>
+    <string name="usewords">常用语</string>
+    <string name="hostorywords">消息记录</string>
+    <string name="chat_send">发送</string>
+    <!-- 买酒提示 -->
+    <string name="buywinetip">您没酒了！一打<xliff:g id="key1">%s</xliff:g>金币，是否购买？</string>
+    <string name="cleandrunktip">您醉了，是否需要醒酒？醒酒丸只需<xliff:g id="key1">%s</xliff:g>金币。</string>
+    <!-- 用户信息 -->
+    <string name="playerinfo_reward">灌倒</string>
+    <string name="playerinfo_winpercent">金币</string>
+    <string name="playerinfo_doublehit">连击</string>
+    <!-- alipay -->
+	<string name="activity_remote_service_binding">AppDemo4</string>
+	<string name="remote_call_failed">Failure calling remote service</string>
+       
+	<string name="partnerHint">"partner"</string>
+	<string name="sellerHint">"seller"</string>
+	<string name="out_trade_noHint">"out_trade_no"</string>
+	<string name="subjectHint">"subject"</string>
+	<string name="bodyHint">"body"</string>
+	<string name="total_feeHint">"total_fee"</string>
+	<string name="notify_urlHint">"notify_url"</string>
+	<string name="charsetHint">"charset"</string>
+	<string name="signTypeHint">"signType"</string>
+	
+	<string name="confirm_install_hint">"安装提示"</string>	
+	<string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+	
+	
+	<string name="Ensure">"确定"</string>
+	<string name="Cancel">"取消"</string>
+	<string name="check_sign_failed">您的订单信息已被非法篡改。</string> 
+	
+	<string name="nmgc_charge_phonecharge">电话卡</string>
+    <string name="nmgc_charge_zhifubao">支付宝</string>
+    <string name="nmgc_charge_caifutong">财付通</string>
+    <string name="nmgc_charge_bencichongzhi">本次充值:</string>
+    <string name="nmgc_charge_card_type">充值卡类型:</string>
+    <string name="nmgc_charge_yuanbao">凤币</string>
+    <string name="nmgc_charge_content_hint">快速选择要充值的凤币数</string>
+    <string name="nmgc_charge_yuanbaochognzhi">凤币充值</string>
+    <string name="nmgc_charge_card_type_yidong">移动充值卡</string>
+    <string name="nmgc_charge_card_button_1">10元</string>
+    <string name="nmgc_charge_card_button_2">20元</string>
+    <string name="nmgc_charge_card_button_3">30元</string>
+    <string name="nmgc_charge_card_button_4">50元</string>
+    <string name="nmgc_charge_card_button_5">100元</string>
+    <string name="nmgc_charge_card_button_6">200元</string>
+    <string name="nmgc_charge_card_button_7">300元</string>
+    <string name="nmgc_charge_card_button_8">500元</string>
+    <string name="nmgc_charge_button_1">1000凤币</string>
+    <string name="nmgc_charge_button_2">2000凤币</string>
+    <string name="nmgc_charge_button_3">5000凤币</string>
+    <string name="nmgc_charge_button_4">10000凤币</string>
+    <string name="nmgc_charge_button_5">20000凤币</string>
+    <string name="nmgc_charge_button_6">50000凤币</string>
+    <string name="nmgc_charge_card_format">%1$s元=%2$s凤币</string>
+    <string name="nmgc_charge_format">需支付%s元</string>
+    <string name="nmgc_charge_create_order">正在提交订单…</string>
+    <string name="nmgc_charge_create_order_failure">提交订单失败，请重试</string>
+    <string name="nmgc_charge_fail">支付失败</string>
+    <string name="nmgc_charge_yichang">支付异常</string>
+    <string name="nmgc_charge_fail_format">充值失败:%s</string>
+    <string name="nmgc_charge_success">支付成功</string>
+    <string name="nmgc_charge_card_hint">同时支持移动、联通、电信充值卡，请选择等值面额充值卡进行充值</string>
+    <string name="nmgc_charge_empty_hint">请您输入充值的凤币数</string>
+    <string name="nmgc_global_pay_yibao">电话卡</string>
+    <string name="nmgc_global_pay_zhifubao">支付宝</string>
+    <string name="nmgc_global_pay_caifutong">财付通</string>
+    <string name="nmgc_charege_info1">用户:  </string>
+	<string name="nmgc_charege_info2">余额:  </string>
+	<string name="nmgc_charge_info3">还需充值:</string>
+	<string name="nmgc_charge_info4">充值账号:</string>
+	<string name="nmgc_charge_empty">         </string>
+	<string name="nmgc_charge_getdata_error">网络异常读取数据失败</string>
+	<string name="nmgc_charge_isgetdata">正在读取数据…</string>
+	<string name="nmgc_charge_bind_hint">为了您的资金安全,请<u>绑定手机</u></string>
+	<string name="nmgc_charge_bind_ok">立即绑定</string>
+	<string name="nmgc_charge_bind">绑定手机</string>
+	<string name="nmgc_charge_already_bind">您已经绑定手机</string>
+	<string name="nmgc_charge_bind_ok_line"><u>绑定手机</u></string>
+	<string name="nmgc_charge_paytype_yichang">渠道异常,请使用其他支付方式</string>
+	<string name="nmgc_global_queding">确定</string>
+</resources>
